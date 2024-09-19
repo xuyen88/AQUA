@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "AQUA_Vote",
+    "motivations": "I believe that blockchain is truly the future for all of us!\nThis is where every transaction is transparent, so we can completely trust each other through blockchain technology. Blockchain will be the best connecting environment to ensure fairness for everyone, every country around the world.\nI am very happy to contribute my small part to this common development of Cardano.",
+    "objectives": "As a Cardano Community Developer,\nI want the most innovative and groundbreaking projects that help develop the Cardano platform to be voted on.\nIt is my responsibility to research and screen projects thoroughly before receiving our votes.",
+    "paymentAddress": "addr1qxytyauawac4ra6nyq2rqv2u5pjqjwux8gm7lq4j25cgx64rqz70cuudlzc608c8rn8z43h4uale99mpmq7tgw56500slxz5tv",
+    "qualifications": "I have 8 years of experience with blockchain technology, since 2017.\nI have participated in evaluating all Catalyst projects from fund 7,8,9,10,11... as LV1 and LV2.\nI have been sharing knowledge and building my local Cardano community with thousands of participants.\nI have 3 years of pool running experience since 2021.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "My Pool ",
+        "uri": "https://pooltool.io/pool/89e0fe388d72c77b7412af1d6bc7c4039e53b0acd4d3403cf62cf88e/epochs"
+      },
+      {
+        "@type": "Identity",
+        "label": "This is my Pool",
+        "uri": "https://adapools.org/AURA"
+      }
+    ]
+  }
+}
